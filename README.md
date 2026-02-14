@@ -19,7 +19,7 @@ A secure authentication application demonstrating a login flow using JWT (JSON W
 ## 🛠️ Prerequisites
 
 Ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (v14 or higher)
+- [Node.js](https://nodejs.org/) (v20 or higher)
 - [npm](https://www.npmjs.com/)
 - [Docker](https://www.docker.com/) (Optional, for containerized setup)
 
@@ -71,30 +71,3 @@ Use the following credentials to log in:
 
 > [!NOTE]
 > These credentials are hardcoded in `backend/server.js` for demonstration purposes.
-
-## 📡 API Endpoints
-
-| Method | Endpoint | Description | Auth Required |
-| :--- | :--- | :--- | :--- |
-| `POST` | `/login` | Authenticates user and sets HttpOnly cookie | No |
-| `POST` | `/logout` | Clears the authentication cookie | No |
-| `GET` | `/dashboard` | Returns protected user data | **Yes** |
-
-## 📂 Project Structure
-
-```
-authentication-sample-app/
-├── backend/            # Express server & API logic
-│   ├── server.js       # Main server entry point
-│   ├── package.json    # Backend dependencies
-├── frontend/           # React application
-│   ├── src/            # Frontend source code
-│   ├── vite.config.js  # Vite configuration
-│   ├── package.json    # Frontend dependencies
-├── docker-compose.yml  # Docker orchestration
-└── README.md           # Project documentation
-```
-
-## 📝 License
-
-This project is open-source and available under the [ISC License](LICENSE).
